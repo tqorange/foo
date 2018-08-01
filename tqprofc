@@ -1,0 +1,19 @@
+alias h="history | grep"
+alias hh="history 30"
+alias lsa="ls -lah"
+alias vpr="vi ~/.bash_profile"
+alias cpr="cat ~/.bash_profile"
+alias spr="source ~/.bash_profile"
+alias ec2='ssh -v -i "/Users/tqb/bu/tqb.pem" ec2-user@$(~/git/tools/machine-upper.py ssh)'
+alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
+# alias drm="docker rm $(docker ps -a -q)"
+
+HISTFILESIZE=1000000
+HISTSIZE=1000000
+HISTCONTROL=ignorespace:erasedups
+
+# export HISTTIMEFORMAT="%y/%m/%d %T: "
+HISTTIMEFORMAT="%F %T  "
+
+# export PS1="\e[0;34m\u-\@\$\e[m "
+
