@@ -4,7 +4,10 @@ alias lsa="ls -lah"
 alias vpr="vi ~/.bash_profile"
 alias cpr="cat ~/.bash_profile"
 alias spr="source ~/.bash_profile"
-alias ec2='ssh -v -i "/Users/tqb/bu/tqb.pem" ec2-user@$(~/git/tools/machine-upper.py ssh)'
+# alias ec2='ssh -v -i "/Users/tqb/bu/tqb.pem" ec2-user@$(~/git/tools/machine-upper.py ssh)'
+alias ec2='awless ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
+alias ec2t='awless ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
+
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
 # alias drm="docker rm $(docker ps -a -q)"
 
