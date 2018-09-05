@@ -1,15 +1,17 @@
 alias h="history | grep"
 alias hh="history 30"
 alias lsa="ls -lah"
-alias vpr="vi ~/.bash_profile"
-alias cpr="cat ~/.bash_profile"
-alias spr="source ~/.bash_profile"
+alias vpr="vi $HOME/.bash_profile"
+alias cpr="cat $HOME/.bash_profile"
+alias spr="source $HOME/.bash_profile"
+alias ctq="cat $HOME/shell/tqprofc"
+
 # alias ec2='ssh -v -i "/Users/tqb/bu/tqb.pem" ec2-user@$(~/git/tools/machine-upper.py ssh)'
 alias ec2='awless ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
 alias ec2t='awless ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
 
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
-# alias drm="docker rm $(docker ps -a -q)"
+# alias drm="docker rm $(docker ps -a -q -f status=exited)"
 
 HISTFILESIZE=1000000
 HISTSIZE=1000000
@@ -19,4 +21,3 @@ HISTCONTROL=ignorespace:erasedups
 HISTTIMEFORMAT="%F %T "
 
 # export PS1="\e[0;34m\u-\@\$\e[m "
-
