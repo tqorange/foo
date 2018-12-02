@@ -13,8 +13,10 @@ alias ec2t='awless ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
 
 # docker stuff
-# docker rm $(docker ps -a -q -f status=exited)
-# docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+# docker rm $(dec)
+alias dec="docker ps -a -q -f 'status=exited' -f 'status=dead'"
+# docker rmi $(ddi)
+alias ddi="docker images --filter 'dangling=true' -q --no-trunc"
 
 HISTFILESIZE=1000000
 HISTSIZE=1000000
