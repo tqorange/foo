@@ -18,8 +18,8 @@ alias dec="docker ps -a -q -f 'status=exited' -f 'status=dead'"
 # docker rmi $(ddi)
 alias ddi="docker images --filter 'dangling=true' -q --no-trunc"
 
-alias k="kubectl"
-alias mk="minikube"
+alias kc="kubectl"
+alias mku="minikube"
 
 alias osha="openssl dgst -sha256"
 
