@@ -1,6 +1,7 @@
 alias h="history | grep"
 alias hh="history 30"
 alias lsa="ls -lah"
+alias lss="less -r"
 alias vpr="vi $HOME/.bash_profile"
 alias cpr="cat $HOME/.bash_profile"
 alias spr="source $HOME/.bash_profile"
@@ -31,3 +32,6 @@ HISTCONTROL=ignorespace:erasedups
 HISTTIMEFORMAT="%F %T "
 
 # export PS1="\e[0;34m\u-\@\$\e[m "
+
+export LESSCHARSET=utf-8
+
