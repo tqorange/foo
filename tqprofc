@@ -8,8 +8,10 @@ alias spr="source $HOME/.bash_profile"
 alias ctq="cat $HOME/shell/tqprofc"
 
 # alias ec2='ssh -v -i "/Users/tqb/bu/tqb.pem" ec2-user@$(~/git/tools/machine-upper.py ssh)'
-alias ec2='awless ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
+alias ec2='awless ssh -i "/Users/tqb/bu/tqb.pem"'
+alias ec2tq='awless ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
 alias ec2t='awless ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
+alias ec2m='awless ssh -i "/Users/tqb/bu/tqb.pem" Muts-Run-Test'
 
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
 
