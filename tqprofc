@@ -8,11 +8,11 @@ alias spr="source $HOME/.bash_profile"
 alias ctq="cat $HOME/shell/tqprofc"
 
 alias ec2='ssh -i "/Users/tqb/bu/tqb.pem"'
-alias ec2tq='ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
+alias ec2tq='awless sh -i "/Users/tqb/bu/tqb.pem" tqb01'
 alias ec2t='ssh -i "/Users/tqb/bu/TestAutomation.pem"'
-alias ec2ti='ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
+alias ec2ti='awless ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
 alias ec2m='ssh -i "/Users/tqb/bu/Muts-Automation".pem'
-alias ec2mi='ssh -i "/Users/tqb/bu/tqb.pem" Muts-Run-Test'
+alias ec2mi='awless ssh -i "/Users/tqb/bu/tqb.pem" Muts-Run-Test'
 
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
 
