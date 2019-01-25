@@ -8,7 +8,7 @@ alias spr="source $HOME/.bash_profile"
 alias ctq="cat $HOME/shell/tqprofc"
 
 alias ec2tq='ssh -i "/Users/tqb/bu/tqb.pem"'
-alias ec2tqi='awless sh -i "/Users/tqb/bu/tqb.pem" tqb01'
+alias ec2tqi='awless ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
 alias ec2t='ssh -i "/Users/tqb/bu/TestAutomation.pem"'
 alias ec2ti='awless ssh -i "/Users/tqb/bu/TestAutomation.pem" test01'
 alias ec2m='ssh -i "/Users/tqb/bu/Muts-Automation.pem"'
