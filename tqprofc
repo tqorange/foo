@@ -25,6 +25,8 @@ alias ddi="docker images --filter 'dangling=true' -q --no-trunc"
 alias kc="kubectl"
 alias mku="minikube"
 
+alias ms="minishift"
+
 alias osha="openssl dgst -sha256"
 
 HISTFILESIZE=20000
