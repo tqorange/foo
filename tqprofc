@@ -48,6 +48,8 @@ ec2x() {
     PEM=""
     if [[ "$1" == "m" ]]; then
         PEM="/Users/tqb/bu/Muts-Automation.pem"
+    elif [[ "$1" == "o" ]]; then
+        PEM="/Users/tqb/bu/atsu-openshift.pem"        
     elif [[ "$1" == "q" ]]; then
         PEM="/Users/tqb/bu/tqb.pem"
     elif [[ "$1" == "t" ]]; then
