@@ -18,6 +18,7 @@ alias ec2mi='awless ssh -i "/Users/tqb/bu/tqb.pem" Muts-Run-Test'
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
 
 # docker stuff
+alias di="docker images | head -16"
 # docker rm $(dec)
 alias dec="docker ps -a -q -f 'status=exited' -f 'status=dead'"
 # docker rmi $(ddi)
