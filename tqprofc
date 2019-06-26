@@ -39,7 +39,7 @@ export HISTTIMEFORMAT="%y/%m/%d %T "
 # HISTTIMEFORMAT="%F %T "
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    export PS1="🔥 \[\e[034m\]\u-\@ \$\[\e[m\]"
+    export PS1="\[\e[034m\]____\u$\[\e[m\] "
 fi
 
 export LESSCHARSET=utf-8
