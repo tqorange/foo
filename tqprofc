@@ -16,6 +16,7 @@ alias ec2m='ssh -i "/Users/tqb/bu/Muts-Automation.pem"'
 alias ec2mi='awless ssh -i "/Users/tqb/bu/tqb.pem" Muts-Run-Test'
 
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
+alias gl="git log --oneline -10"
 
 # docker stuff
 alias di="docker images | head -16"
