@@ -17,6 +17,7 @@ alias ec2mi='awless ssh -i "/Users/tqb/bu/tqb.pem" Muts-Run-Test'
 
 alias gi="git remote -v show && printf \"___________\n\" && git branch -vva && printf \"___________\n\" && git status"
 alias gl="git log --oneline -10"
+alias gs="git stash list"
 
 # docker stuff
 alias di="docker images | head -16"
@@ -41,6 +42,8 @@ export HISTTIMEFORMAT="%y/%m/%d %T "
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     export PS1="\[\e[034m\]____\u$\[\e[m\] "
+    source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+    PS1='$(kube_ps1)'$PS1
 fi
 
 export LESSCHARSET=utf-8
