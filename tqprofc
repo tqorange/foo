@@ -21,9 +21,11 @@ alias gs="git stash list"
 
 # docker stuff
 alias di="docker images | head -16"
-# docker rm $(dec)
+
+alias drmc="echo 'docker rmi \$(dec)' | tee >(pbcopy)"
 alias dec="docker ps -a -q -f 'status=exited' -f 'status=dead'"
-# docker rmi $(ddi)
+
+alias drmi="echo 'docker rmi \$(ddi)' | tee >(pbcopy)"
 alias ddi="docker images --filter 'dangling=true' -q --no-trunc"
 
 alias kc="kubectl"
