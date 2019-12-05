@@ -50,6 +50,8 @@ fi
 
 export LESSCHARSET=utf-8
 
+GOPRIVATE=github.com/atsu/tools,github.com/atsu/goat
+
 ec2x() {
 
     PEM=""
