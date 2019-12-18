@@ -7,6 +7,7 @@ alias vpr="vi $HOME/.bash_profile"
 alias cpr="cat $HOME/.bash_profile"
 alias spr="source $HOME/.bash_profile"
 alias ctq="cat $HOME/shell/tqprofc"
+alias p="sudo lsof -i -n -P | grep TCP"
 
 alias ec2tq='ssh -i "/Users/tqb/bu/tqb.pem"'
 alias ec2tqi='awless ssh -i "/Users/tqb/bu/tqb.pem" tqb01'
